@@ -4,10 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//traigo provider para usar el store
+import {Provider} from 'react-redux'
+import {store} from './store'
+import {BrowserRouter} from 'react-router-dom'
+
 ReactDOM.render(
+  <Provider store = {store}>
   <React.StrictMode>
+    <BrowserRouter>
     <App />
-  </React.StrictMode>,
+    </BrowserRouter>
+  </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
