@@ -5,14 +5,14 @@ const router = Router()
 
 
 router.post("/characters", async function (req, res) {
-    const {name,nickName,birthday,status,image,createdInDb,ocupation,} = req.body
+    const {name,nickname,birthday,status,img,createdInDb,ocupation,} = req.body
 
-    if(name && nickName && birthday && ocupation){
+    if(name && nickname && birthday && ocupation){
         let characterCreated = await Character.create({
             name,
-            nickName,
+            nickname,
             birthday,
-            image,
+            img,
             status,
             createdInDb,
         })

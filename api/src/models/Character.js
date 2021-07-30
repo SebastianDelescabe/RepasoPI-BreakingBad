@@ -14,7 +14,7 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false
     },
-    nickName: {
+    nickname: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -25,11 +25,11 @@ module.exports = (sequelize) => {
     status:{
       type:DataTypes.ENUM('Alive','Deceased','Presumed dead','Unknown'),
     },
-    image:{
+    img:{
       type:DataTypes.STRING,
     },
     createdInDb:{
-      type:DataTypes.BOOLEAN,  //Todos los creados en bd se crean con esta propiedad para luego traer todos los que estan en base de datos.
+      type:DataTypes.BOOLEAN,  //Todos los creados en bd se crean con esta propiedad para luego traer todos los que estan en base de datos en el filtro !!!!!
       allowNull:false,
       defaultValue:true,
     }

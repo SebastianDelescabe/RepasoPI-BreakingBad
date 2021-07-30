@@ -1,0 +1,18 @@
+.paginado{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  .number{
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.37);
+  }
+  .number:hover{
+    background: rgba(0, 0, 0, 0.555);
+  }

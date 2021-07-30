@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { Characters, Ocupation } = require('../db')
+const { Ocupation } = require('../db')
 const axios = require('axios')
 
 const router = Router()
